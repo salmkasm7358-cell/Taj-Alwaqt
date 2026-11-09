@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سلة التسوق - تاج الوقت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><a href="#"><i class="fa-solid fa-user"></i> حسابي</a><a href="track-order.html"><i class="fa-solid fa-truck"></i> تتبع طلبك</a></div></div></div>
+    <header class="main-header"><div class="container header-inner"><div class="logo"><a href="index.html"><img src="images/logo.png" onerror="this.src='https://via.placeholder.com/150x50/000000/d4af37?text=تاج+الوقت'"></a></div><div class="search-bar"><input type="text" placeholder="ابحث..."><button><i class="fa-solid fa-magnifying-glass"></i></button></div><div class="header-actions"><a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">0</span></a></div></div></header>
+    <nav class="main-nav"><div class="container"><ul><li><a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li><li><a href="shop.html"><i class="fa-solid fa-layer-group"></i> الأقسام</a></li></ul></div></nav>
 
+    <div class="page-header container"><h1><i class="fa-solid fa-cart-shopping"></i> سلة التسوق</h1></div>
+    <div class="cart-container container">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images/watches/watch-1.jpg" onerror="this.src='https://via.placeholder.com/80/222/d4af37?text=Watch'">
+                <div class="item-details"><h3>ساعة رولكس الأصلية</h3></div>
+                <div class="item-quantity"><button>-</button><input type="number" value="1" readonly><button>+</button></div>
+                <div class="item-price" style="color:var(--gold); font-weight:bold;">1,999 ر.س</div>
+                <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h3>ملخص الطلب</h3>
+            <div class="summary-row"><span>المجموع:</span><span>1,999 ر.س</span></div>
+            <a href="checkout.html" class="btn-gold w-100">إتمام الطلب</a>
+        </div>
+    </div>
+</body>
+</html>
