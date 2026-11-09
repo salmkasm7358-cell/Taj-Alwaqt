@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إتمام الطلب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="page-header container" style="margin-top:50px;"><h1><i class="fa-solid fa-check-circle"></i> إتمام الطلب</h1></div>
+    <div class="checkout-container container">
+        <form class="checkout-form">
+            <h3>معلومات الشحن</h3>
+            <div class="form-row"><input type="text" placeholder="الاسم *" required><input type="tel" placeholder="الجوال *" required></div>
+            <input type="text" placeholder="العنوان *" required class="w-100">
+            <h3>الدفع</h3>
+            <label class="payment-method"><input type="radio" checked> الدفع عند الاستلام</label>
+            <button type="submit" class="btn-gold w-100">تأكيد الطلب</button>
+        </form>
+    </div>
+    <script src="js/validation.js"></script>
+</body>
+</html>
