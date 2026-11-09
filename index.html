@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تاج الوقت - ساعات فاخرة</title>
+    <title>تاج الوقت | TAJ ALWAQT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,29 +11,26 @@
 
     <!-- الشريط العلوي -->
     <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div>
-                <a href="#"><i class="fa-solid fa-user"></i> حسابي</a>
-                <a href="#"><i class="fa-solid fa-truck"></i> تتبع طلبك</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i> تواصل معنا</a>
-            </div>
-            <div class="welcome">مرحباً بك في متجر تاج الوقت <i class="fa-solid fa-crown"></i></div>
-        </div>
+        <span>مرحباً بك في متجر تاج الوقت <i class="fa-solid fa-crown" style="color:var(--gold)"></i></span>
     </div>
 
     <!-- الهيدر -->
     <header class="main-header">
         <div class="container header-inner">
-            <div class="logo">
-                <img src="https://i.ibb.co/Vvz1Zk5/logo.png" alt="تاج الوقت">
-            </div>
+            <a href="index.html" class="logo">
+                <!-- صورة الشعار من الإنترنت مؤقتاً -->
+                <img src="https://cdn-icons-png.flaticon.com/512/2662/2662503.png" alt="شعار تاج الوقت" style="filter: invert(76%) sepia(50%) saturate(600%) hue-rotate(350deg);">
+            </a>
             <div class="search-bar">
-                <input type="text" placeholder="ابحث عن ساعة...">
+                <input type="text" id="searchInput" placeholder="ابحث عن ساعة...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="header-icons">
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
-                <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">0</span></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </a>
             </div>
         </div>
     </header>
@@ -43,176 +40,84 @@
         <div class="container">
             <ul>
                 <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
-                <li><a href="#"><i class="fa-solid fa-layer-group"></i> الأقسام</a></li>
+                <li><a href="shop.html"><i class="fa-solid fa-list"></i> المنتجات</a></li>
                 <li><a href="#"><i class="fa-solid fa-tags"></i> العروض</a></li>
-                <li><a href="#"><i class="fa-solid fa-fire"></i> الأكثر مبيعاً</a></li>
-                <li><a href="#"><i class="fa-solid fa-users"></i> من نحن</a></li>
-                <li><a href="#"><i class="fa-solid fa-headset"></i> اتصل بنا</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> اتصل بنا</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- البانر -->
     <section class="hero">
-        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=2070&auto=format&fit=crop');"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h3>مرحباً بكم في متجر</h3>
-            <h1><i class="fa-solid fa-crown"></i> تاج الوقت</h1>
+            <h1>تاج الوقت</h1>
             <h2>الوقت عنوان أناقتك</h2>
             <p>اكتشف مجموعتنا الفاخرة من الساعات الأصلية</p>
-            <a href="#" class="btn-gold"><i class="fa-solid fa-cart-shopping"></i> تسوق الآن</a>
+            <a href="shop.html" class="btn-gold"><i class="fa-solid fa-cart-shopping"></i> تسوق الآن</a>
         </div>
     </section>
 
-    <!-- تسوق حسب الفئة -->
-    <div class="container">
+    <!-- الأقسام -->
+    <section class="container">
         <div class="section-title"><h2>تسوق حسب الفئة</h2></div>
-        <div class="categories">
-            <a href="#" class="cat-card all">
-                <i class="fa-solid fa-gem"></i>
-                <span>عرض الكل</span>
+        <div class="categories-scroll">
+            <a href="shop.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=200" alt="رجالية">
+                <span>رجالية</span>
             </a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942800.png"><span>ساعات ذكية</span></a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942812.png"><span>ساعات كلاسيكية</span></a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942808.png"><span>ساعات رياضية</span></a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942796.png"><span>ساعات فاخرة</span></a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942806.png"><span>ساعات نسائية</span></a>
-            <a href="#" class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942804.png"><span>ساعات رجالية</span></a>
+            <a href="shop.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=200" alt="نسائية">
+                <span>نسائية</span>
+            </a>
+            <a href="shop.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=200" alt="فاخرة">
+                <span>فاخرة</span>
+            </a>
+            <a href="shop.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1619134778706-7015533a6150?w=200" alt="رياضية">
+                <span>رياضية</span>
+            </a>
         </div>
-    </div>
+    </section>
 
-    <!-- البانرات (العروض) -->
-    <div class="container banners">
-        <div class="banner-card">
-            <div class="banner-text">
-                <h3>عروض حصرية</h3>
-                <p>لفترة محدودة</p>
-                <a href="#" class="btn-gold" style="padding: 8px 20px; font-size: 14px;">استغل العرض</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=500&auto=format&fit=crop" style="width: 150px; left: 10px; bottom: 10px; border-radius: 10px;">
-        </div>
-        <div class="banner-card">
-            <div class="banner-text">
-                <h3>أناقة تدوم</h3>
-                <p>مع كل ثانية</p>
-                <a href="#" class="btn-gold" style="padding: 8px 20px; font-size: 14px;">اكتشف المزيد</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=500&auto=format&fit=crop" style="width: 150px; left: 10px; bottom: 10px; border-radius: 10px;">
-        </div>
-    </div>
-
-    <!-- الأكثر مبيعاً -->
-    <div class="container">
+    <!-- المنتجات الأكثر مبيعاً -->
+    <section class="container">
         <div class="section-title"><h2>الأكثر مبيعاً</h2></div>
-        <div class="products-grid">
-            <!-- منتج 1 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=400&auto=format&fit=crop" alt="ساعة">
-                    <span class="badge-sale">40%</span>
-                </div>
-                <div class="product-info">
-                    <h3>ساعة فاخرة ذهبية</h3>
-                    <div class="price"><span class="new-price">899 ر.س</span><span class="old-price">1,499 ر.س</span></div>
-                    <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
-                </div>
-            </div>
-            <!-- منتج 2 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop" alt="ساعة">
-                    <span class="badge-sale">20%</span>
-                </div>
-                <div class="product-info">
-                    <h3>ساعة رجالية فاخرة</h3>
-                    <div class="price"><span class="new-price">879 ر.س</span><span class="old-price">1,099 ر.س</span></div>
-                    <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
-                </div>
-            </div>
-            <!-- منتج 3 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=400&auto=format&fit=crop" alt="ساعة">
-                    <span class="badge-sale">35%</span>
-                </div>
-                <div class="product-info">
-                    <h3>ساعة كلاسيكية أنيقة</h3>
-                    <div class="price"><span class="new-price">579 ر.س</span><span class="old-price">899 ر.س</span></div>
-                    <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
-                </div>
-            </div>
-            <!-- منتج 4 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=400&auto=format&fit=crop" alt="ساعة">
-                    <span class="badge-sale">25%</span>
-                </div>
-                <div class="product-info">
-                    <h3>ساعة رياضية مميزة</h3>
-                    <div class="price"><span class="new-price">599 ر.س</span><span class="old-price">799 ر.س</span></div>
-                    <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
-                </div>
-            </div>
-            <!-- منتج 5 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?q=80&w=400&auto=format&fit=crop" alt="ساعة">
-                    <span class="badge-sale">30%</span>
-                </div>
-                <div class="product-info">
-                    <h3>ساعة نسائية فاخرة</h3>
-                    <div class="price"><span class="new-price">699 ر.س</span><span class="old-price">999 ر.س</span></div>
-                    <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
-                </div>
-            </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- سيتم إضافة المنتجات هنا برمجياً عبر JS -->
         </div>
-    </div>
+    </section>
 
     <!-- الفوتر -->
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="https://i.ibb.co/Vvz1Zk5/logo.png" class="footer-logo" alt="Logo">
-                <p>ساعات فاخرة بأناقة لا مثيل لها. وجهتك الأولى لاقتناء أرقى الساعات الأصلية.</p>
-                <div style="margin-top:15px; display:flex; gap:10px;">
-                    <a href="#"><i class="fa-brands fa-twitter" style="color:var(--gold); font-size:20px;"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f" style="color:var(--gold); font-size:20px;"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram" style="color:var(--gold); font-size:20px;"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok" style="color:var(--gold); font-size:20px;"></i></a>
-                </div>
+                <h4>تاج الوقت</h4>
+                <p style="color:#888; font-size:13px;">وجهتك الأولى للساعات الفاخرة والأصلية.</p>
             </div>
             <div class="footer-col">
                 <h4>روابط سريعة</h4>
                 <ul>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">جميع المنتجات</a></li>
-                    <li><a href="#">الأقسام</a></li>
-                    <li><a href="#">العروض</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="shop.html">المنتجات</a></li>
+                    <li><a href="#">سياسة الاسترجاع</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>معلومات المتجر</h4>
+                <h4>تواصل معنا</h4>
                 <ul>
-                    <li><a href="#">سياسة الخصوصية</a></li>
-                    <li><a href="#">الشروط والأحكام</a></li>
-                    <li><a href="#">سياسة الاستبدال</a></li>
-                    <li><a href="#">تتبع طلبك</a></li>
+                    <li><i class="fa-solid fa-phone"></i> +96650000000</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@taj.com</li>
                 </ul>
-            </div>
-            <div class="footer-col">
-                <h4>اشترك في نشرتنا البريدية</h4>
-                <p>ليصلك كل جديد عن العروض والمنتجات.</p>
-                <form class="newsletter">
-                    <input type="email" placeholder="بريدك الإلكتروني">
-                    <button type="submit">اشترك</button>
-                </form>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 جميع الحقوق محفوظة - متجر تاج الوقت</p>
+            <p>© 2026 جميع الحقوق محفوظة - متجر تاج الوقت</p>
         </div>
     </footer>
 
+    <!-- ملفات الجافاسكريبت -->
+    <script src="js/main.js"></script>
 </body>
-                                           </html>
+</html>
