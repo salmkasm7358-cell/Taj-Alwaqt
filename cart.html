@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سلة التسوق - تاج الوقت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- (انسخ الهيدر من index.html هنا) -->
+    <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><a href="#"><i class="fa-solid fa-user"></i> حسابي</a><a href="track-order.html"><i class="fa-solid fa-truck"></i> تتبع طلبك</a><a href="contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></div><div class="top-bar-right"><span>مرحباً بك في متجر تاج الوقت <i class="fa-solid fa-crown"></i></span></div></div></div>
+    <header class="main-header"><div class="container header-inner"><div class="logo"><a href="index.html"><img src="images/logo.png" alt="تاج الوقت" onerror="this.src='https://via.placeholder.com/150x50/000000/d4af37?text=تاج+الوقت'"></a></div><div class="search-bar"><input type="text" placeholder="ابحث عن ساعة..."><button><i class="fa-solid fa-magnifying-glass"></i></button></div><div class="header-actions"><a href="#"><i class="fa-regular fa-heart"></i></a><a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">0</span></a></div></div></header>
+    <nav class="main-nav"><div class="container"><ul><li><a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li><li><a href="shop.html"><i class="fa-solid fa-layer-group"></i> الأقسام</a></li><li><a href="#"><i class="fa-solid fa-tags"></i> العروض</a></li><li><a href="#"><i class="fa-solid fa-fire"></i> الأكثر مبيعاً</a></li><li><a href="about.html"><i class="fa-solid fa-users"></i> من نحن</a></li><li><a href="contact.html"><i class="fa-solid fa-headset"></i> اتصل بنا</a></li></ul></div></nav>
+
+    <div class="page-header container"><h1><i class="fa-solid fa-cart-shopping"></i> سلة التسوق</h1></div>
+
+    <div class="cart-container container">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images/watches/watch-2.jpg" onerror="this.src='https://via.placeholder.com/80/222/d4af37?text=Watch'">
+                <div class="item-details"><h3>ساعة رولكس الأصلية</h3><p style="color:#888; font-size:14px;">اللون: ذهبي - معدني</p></div>
+                <div class="item-quantity"><button>-</button><input type="number" value="1" readonly><button>+</button></div>
+                <div class="item-price" style="color:var(--gold); font-weight:bold;">1,999 ر.س</div>
+                <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3 style="margin-bottom:20px; color:var(--gold);">ملخص الطلب</h3>
+            <div class="summary-row"><span>المجموع الفرعي:</span><span>1,999 ر.س</span></div>
+            <div class="summary-row"><span>الشحن:</span><span class="text-green">مجاني</span></div>
+            <div class="summary-row total"><span>المجموع الكلي:</span><span>1,999 ر.س</span></div>
+            <a href="checkout.html" class="btn-gold w-100">متابعة إتمام الطلب <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer class="main-footer"><div class="container footer-grid"><div class="footer-col"><img src="images/logo.png" class="footer-logo" onerror="this.src='https://via.placeholder.com/150x50/000000/d4af37?text=تاج+الوقت'"><p>ساعات فاخرة بأناقة لا مثيل لها.</p><div class="social-links"><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="shop.html">جميع المنتجات</a></li><li><a href="#">الأقسام</a></li><li><a href="#">العروض</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div><div class="footer-col"><h4>معلومات المتجر</h4><ul><li><a href="#">سياسة الخصوصية</a></li><li><a href="#">الشروط والأحكام</a></li><li><a href="#">سياسة الاستبدال</a></li><li><a href="track-order.html">تتبع طلبك</a></li></ul></div><div class="footer-col"><h4>اشترك في نشرتنا البريدية</h4><form class="newsletter-form"><input type="email" placeholder="بريدك الإلكتروني"><button type="submit" class="btn-gold">اشترك</button></form></div></div><div class="footer-bottom"><div class="container"><p>© 2025 جميع الحقوق محفوظة - متجر تاج الوقت</p></div></div></footer>
+    
+    <script src="js/cart.js"></script>
+</body>
+</html>

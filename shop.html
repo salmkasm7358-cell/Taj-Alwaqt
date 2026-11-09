@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر - تاج الوقت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- (انسخ الهيدر من index.html هنا) -->
+    <div class="top-bar"><div class="container top-bar-inner"><div class="top-bar-left"><a href="#"><i class="fa-solid fa-user"></i> حسابي</a><a href="track-order.html"><i class="fa-solid fa-truck"></i> تتبع طلبك</a><a href="contact.html"><i class="fa-solid fa-envelope"></i> تواصل معنا</a></div><div class="top-bar-right"><span>مرحباً بك في متجر تاج الوقت <i class="fa-solid fa-crown"></i></span></div></div></div>
+    <header class="main-header"><div class="container header-inner"><div class="logo"><a href="index.html"><img src="images/logo.png" alt="تاج الوقت" onerror="this.src='https://via.placeholder.com/150x50/000000/d4af37?text=تاج+الوقت'"></a></div><div class="search-bar"><input type="text" placeholder="ابحث عن ساعة..."><button><i class="fa-solid fa-magnifying-glass"></i></button></div><div class="header-actions"><a href="#"><i class="fa-regular fa-heart"></i></a><a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">0</span></a></div></div></header>
+    <nav class="main-nav"><div class="container"><ul><li><a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li><li><a href="shop.html" class="active"><i class="fa-solid fa-layer-group"></i> الأقسام</a></li><li><a href="#"><i class="fa-solid fa-tags"></i> العروض</a></li><li><a href="#"><i class="fa-solid fa-fire"></i> الأكثر مبيعاً</a></li><li><a href="about.html"><i class="fa-solid fa-users"></i> من نحن</a></li><li><a href="contact.html"><i class="fa-solid fa-headset"></i> اتصل بنا</a></li></ul></div></nav>
+
+    <div class="page-header container"><h1>جميع المنتجات</h1></div>
+
+    <div class="shop-container container">
+        <aside class="sidebar">
+            <h3><i class="fa-solid fa-filter"></i> تصفية المنتجات</h3>
+            <div class="filter-group">
+                <h4>الفئة</h4>
+                <label><input type="checkbox"> ساعات رجالية</label>
+                <label><input type="checkbox"> ساعات نسائية</label>
+                <label><input type="checkbox"> ساعات رياضية</label>
+            </div>
+            <button class="btn-gold w-100">تطبيق الفلتر</button>
+        </aside>
+        <div class="shop-products">
+            <!-- كرت منتج -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="images/watches/watch-1.jpg" alt="ساعة" onerror="this.src='https://via.placeholder.com/150/222/d4af37?text=Watch'">
+                    <span class="badge-sale">40%</span>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>ساعة رولكس فاخرة</h3>
+                    <div class="price"><span class="new-price">2,399 ر.س</span><span class="old-price">3,999 ر.س</span></div>
+                    <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button>
+                </div>
+            </div>
+            <!-- كرر الكرت 4-8 مرات -->
+            <div class="product-card"><div class="product-img"><img src="images/watches/watch-2.jpg" onerror="this.src='https://via.placeholder.com/150/222/d4af37?text=Watch'"><span class="badge-sale">20%</span><button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button></div><div class="product-info"><h3>ساعة كلاسيكية</h3><div class="price"><span class="new-price">1,099 ر.س</span><span class="old-price">1,499 ر.س</span></div><button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button></div></div>
+            <div class="product-card"><div class="product-img"><img src="images/watches/watch-3.jpg" onerror="this.src='https://via.placeholder.com/150/222/d4af37?text=Watch'"><span class="badge-sale">35%</span><button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button></div><div class="product-info"><h3>ساعة رياضية</h3><div class="price"><span class="new-price">799 ر.س</span><span class="old-price">1,199 ر.س</span></div><button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> أضف للسلة</button></div></div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer class="main-footer"><div class="container footer-grid"><div class="footer-col"><img src="images/logo.png" class="footer-logo" onerror="this.src='https://via.placeholder.com/150x50/000000/d4af37?text=تاج+الوقت'"><p>ساعات فاخرة بأناقة لا مثيل لها.</p><div class="social-links"><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="shop.html">جميع المنتجات</a></li><li><a href="#">الأقسام</a></li><li><a href="#">العروض</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div><div class="footer-col"><h4>معلومات المتجر</h4><ul><li><a href="#">سياسة الخصوصية</a></li><li><a href="#">الشروط والأحكام</a></li><li><a href="#">سياسة الاستبدال</a></li><li><a href="track-order.html">تتبع طلبك</a></li></ul></div><div class="footer-col"><h4>اشترك في نشرتنا البريدية</h4><form class="newsletter-form"><input type="email" placeholder="بريدك الإلكتروني"><button type="submit" class="btn-gold">اشترك</button></form></div></div><div class="footer-bottom"><div class="container"><p>© 2025 جميع الحقوق محفوظة - متجر تاج الوقت</p></div></div></footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
